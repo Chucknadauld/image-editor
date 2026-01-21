@@ -114,15 +114,12 @@ function motionblur(image: Image, length: number): void {
 
 function readImage(filePath: string): Image {
 	const text = fs.readFileSync(filePath, "utf8");
-	// Tokenize by whitespace (no comment handling, to match Java)
 	const tokens = text.trim().split(/\s+/);
 	let i = 0;
-	// Skip "P3"
 	i++;
 	const width = parseInt(tokens[i++]!, 10);
 	const height = parseInt(tokens[i++]!, 10);
 	const image = new Image(width, height);
-	// Skip max color value
 	i++;
 	for (let y = 0; y < height; ++y) {
 		for (let x = 0; x < width; ++x) {
@@ -200,6 +197,5 @@ function main(argv: string[]): void {
 	writeImage(image, outputFile);
 }
 
-// Node entry
 main(process.argv.slice(2));
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node dist/ImageEditor.js"
+    "start": "node dist/ImageEditor.js",
+    "verify": "npm run build && bash scripts/verify.sh"
   },
   "repository": {
     "type": "git",

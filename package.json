@@ -1,0 +1,28 @@
+{
+  "name": "image-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/ImageEditor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chucknadauld/image-editor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Chucknadauld/image-editor/issues"
+  },
+  "homepage": "https://github.com/Chucknadauld/image-editor#readme",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/node": "^25.0.9"
+  }
+}

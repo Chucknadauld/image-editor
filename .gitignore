@@ -1,0 +1,4 @@
+ImageEditorFiles/other
+node_modules
+dist
+.DS_Store
